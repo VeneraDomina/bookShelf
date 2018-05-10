@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #514f4f;
+    display: flex;
+    align-items: center;
+}
+
+footer .bookshelfLogo {
+    margin-left: 20px;
+}

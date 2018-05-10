@@ -1,0 +1,84 @@
+figure {
+    width: calc(100% - 22px);
+    min-width: 100px;
+    height: calc(100% - 22px);
+    margin: 0;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.bookImage {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+figcaption {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+small {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 55px;
+    text-align: left;
+}
+
+.price {
+    font-size: 12px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.star-rating {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    padding: 5px 0;
+    direction: rtl;
+}
+
+.delete {
+    font-size: 14px;
+}
+
+figure:hover .delete {
+    display: block;
+}
+
+.hideImage {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all 0.7s;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bookImage:hover ~ .hideImage,
+.hideImage:hover {
+    bottom: 55px;
+    opacity: 1;
+}
+
+.deleteBook {
+    display: flex;
+}
+
+.btn-deleteBook {
+    cursor: pointer;
+}

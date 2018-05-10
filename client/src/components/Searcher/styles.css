@@ -1,0 +1,22 @@
+.searchFolder {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.searchField {
+    height: 25px;
+    padding: 3px;
+    font-size: 12px;
+}
+.searchField:focus {
+    outline: none;
+}
+
+.btn-addBook {
+    width: 50px;
+    margin-left: -1px;
+}
+
+.btn-addBook:focus {
+    box-shadow: 0 0 10px rgba(162, 175, 108, 1);
+}

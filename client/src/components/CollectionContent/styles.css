@@ -1,0 +1,50 @@
+.collectionContent {
+    background-color: #f2f2f2;
+    padding: 15px 0;
+    display: none;
+}
+
+.folder {
+    width: 60%;
+    max-width: 1536px;
+    margin: 0 auto;
+    color: #222222;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    outline: none;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.description {
+    outline: none;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.active {
+    display: block;
+}
+
+.title:focus,
+.description:focus {
+    border-color: #222;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .folder {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .folder {
+        width: 95%;
+    }
+}
+

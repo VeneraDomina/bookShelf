@@ -1,0 +1,32 @@
+.bookListNav {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    padding: 0 10px;
+}
+
+.bookListNav li {
+    list-style: none;
+    max-width: 150px;
+}
+
+@media screen and (max-width: 1416px) {
+    .bookListNav {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .bookListNav {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media screen and (max-width: 823px) {
+    .bookListNav {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+}
+

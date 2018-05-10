@@ -1,0 +1,111 @@
+.collectionList {
+    width: 60%;
+    max-width: 1536px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.collectionList-nav {
+    padding: 0 10px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(133px, 1fr));
+}
+
+.collectionList-nav li {
+    list-style: none;
+    padding: 5px;
+    width: calc(100% - 10px);
+    min-width: 123px;
+}
+
+.btn-newCollection,
+.btn-createCollection {
+    display: block;
+    width: 150px;
+    margin: 0 auto 15px;
+    z-index: 2;
+}
+
+.popupContent {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 100px calc(100% - 100px);
+    grid-row-gap: 10px;
+    font-family: 'Georgia', serif ;
+}
+
+input[type='text'] {
+    width: 40%;
+    min-width: 200px;
+    border: 1px solid #5e5e5e;
+    padding: 3px;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.7px;
+}
+
+textarea {
+    border: 1px solid #5e5e5e;
+    padding: 3px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .collectionList {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .collectionList {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .collection p {
+        font-size: 12px;
+    }
+    .collectionList-nav {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .collectionList-nav li {
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .collection p {
+        font-size: 10px;
+    }
+    .collectionList-nav {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .collectionList-nav li {
+        min-width: 80px;
+    }
+
+    label {
+        padding: 10px 0 5px;
+    }
+    .popupContent,
+    label {
+        display: block;
+    }
+
+    input[type='text'],
+    textarea {
+        width: 100%;
+    }
+}
+
+

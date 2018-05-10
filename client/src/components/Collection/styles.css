@@ -1,0 +1,52 @@
+.collection {
+    width: calc(100% - 12px);
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0);
+    font-size: 14px;
+    padding: 40px 15px 10px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 15px);
+}
+
+.fa-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    color: #bbb;
+    display: none;
+}
+
+.collection:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.collection:hover .fa-close,
+.collection:hover .fa-edit {
+    display: block;
+}
+
+.collection:focus {
+    outline: none;
+}
+
+.fa-close:hover {
+    color: #5e5e5e;
+}
+
+.collection p {
+    margin: 0;
+    word-wrap: break-word;
+}

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #222222;
+  font-weight: normal;
+}
+
+.btn {
+  height: 25px;
+  font-family: 'Times New Roman', serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #353535;
+  background-color: #d0de93;
+  border: 1px solid #a2af6c;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}

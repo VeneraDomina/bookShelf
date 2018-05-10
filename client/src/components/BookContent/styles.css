@@ -1,0 +1,26 @@
+.open {
+    background-color: #f2f2f2;
+}
+
+.bookListTitle {
+    margin: 20px 0;
+}
+
+.btn-newBook {
+    display: block;
+    width: 150px;
+    margin: 0 auto 15px;
+    z-index: 2;
+}
+
+.bookFolder input[type='text'] {
+    width: 100%;
+}
+
+.bookFolder input[type='number'] {
+    width: 20%;
+}
+
+.bookFolder .popupContent {
+    grid-template-columns: 70px calc(100% - 70px);
+}
